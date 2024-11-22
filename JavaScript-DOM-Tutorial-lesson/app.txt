@@ -1,0 +1,15 @@
+var btns = document.querySelectorAll("#book-list .delete");
+
+btns.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+
+    //this gives me acces to the li
+    const li = e.target.parentNode;
+
+     //this gives me acces to the ul
+    li.parentNode.removeChild(li);
+  });
+});
+
+
+
